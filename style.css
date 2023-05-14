@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141b24;
+}
+
+.img-nav {
+    width: 120px;
+}
+
+.img-profile {
+    width: 45px;
+}
+
+.film {
+    transition: 0.3s;
+    position: relative;
+}
+
+.film:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease 0.3s;
+    z-index: 2;
+}
+
+#extra {
+    animation-timing-function: ease-in-out;
+    animation: disappear 4s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
